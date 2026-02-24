@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planificador de Horarios 2026-A</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <h1>📚 Planificador de Horarios 2026-A</h1>
+                    <p class="subtitle">Facultad de Ciencias Contables - Integración Estudiantil</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-primary" onclick="guardarHorario()">💾 Guardar</button>
+                    <button class="btn btn-secondary" onclick="cargarHorario()">📂 Cargar</button>
+                    <button class="btn btn-warning" onclick="exportarPDF()">📥 PDF</button>
+                    <button class="btn btn-info" onclick="exportarImagen()">🖼️ Imagen</button>
+                    <button class="btn btn-danger" onclick="limpiarHorario()">🗑️ Limpiar</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>📚 Cursos Disponibles</h2>
+                </div>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="🔍 Buscar curso..." onkeyup="buscarCursos()">
+                </div>
+                <div class="filter-section">
+                    <label>Filtrar por Ciclo:</label>
+                    <select id="cicloFilter" onchange="filtrarPorCiclo()">
+                        <option value="">Todos los ciclos</option>
+                        <option value="I">CICLO I</option>
+                        <option value="II">CICLO II</option>
+                        <option value="III">CICLO III</option>
+                        <option value="IV">CICLO IV</option>
+                        <option value="V">CICLO V</option>
+                        <option value="VI">CICLO VI</option>
+                        <option value="VII">CICLO VII</option>
+                        <option value="VIII">CICLO VIII</option>
+                        <option value="IX">CICLO IX</option>
+                        <option value="X">CICLO X</option>
+                    </select>
+                </div>
+                <div class="cursos-list" id="cursosList"></div>
+            </aside>
+
+            <main class="main-area">
+                <div class="horario-section">
+                    <h2>📅 Mi Horario</h2>
+                    <div class="horario-grid" id="horarioGrid"></div>
+                </div>
+                <div class="selected-section">
+                    <h3>✅ Cursos Seleccionados</h3>
+                    <div class="selected-courses" id="selectedCourses">Aún no has seleccionado ningún curso</div>
+                </div>
+                <div class="saved-section">
+                    <h3>💾 Mis Horarios Guardados</h3>
+                    <div class="saved-schedules" id="savedSchedules">Aún no has guardado ningún horario</div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
