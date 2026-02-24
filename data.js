@@ -1,8 +1,8 @@
-// Base de datos COMPLETA - Ciclos I a X - Facultad de Ciencias Contables
+// Base de datos COMPLETA - Ciclos I a X - Facultad de Ciencias Contables 2026-A
 const cursos = [
     // ============ CICLO I ============
     {ciclo: "I", nombre: "CONTABILIDAD BÁSICA", codigo: "CO102", plan: "PLAN 2022", secciones: [
-        {numero: "2410-01C", docente: "ORDO��EZ FERRO ANA CECILIA", aula: "FCC1A01", horarios: [{dia: "Lun", inicio: "08:00", fin: "10:30"}, {dia: "Mié", inicio: "08:00", fin: "09:40"}]},
+        {numero: "2410-01C", docente: "ORDOÑEZ FERRO ANA CECILIA", aula: "FCC1A01", horarios: [{dia: "Lun", inicio: "08:00", fin: "10:30"}, {dia: "Mié", inicio: "08:00", fin: "09:40"}]},
         {numero: "5569-02C", docente: "TORRES CARRERA LUCY EMILIA", aula: "FCC1A02", horarios: [{dia: "Mar", inicio: "08:00", fin: "10:30"}, {dia: "Jue", inicio: "11:20", fin: "13:00"}]},
         {numero: "8497-04C", docente: "ROMERO DUEÑEZ LUIS EDUARDO", aula: "FCC1A03", horarios: [{dia: "Mié", inicio: "12:10", fin: "16:20"}]}
     ]},
@@ -321,4 +321,4 @@ const cursos = [
 
     // ============ CICLO X ============
     {ciclo: "X", nombre: "AUDITORÍA EMPRESARIAL", codigo: "CAU607", plan: "PLAN 2019", secciones: [
-        {numero: "6092-10C", docente: "ARGOTE LAZON LINA", aula: "FCC2A06", horarios: [{dia: "Mar", inicio: "18:00", fin: "19:40"
+        {numero: "6092-10C", docente: "ARGOTE LAZON LINA", aula: "FCC2A06", horarios: [{dia: "Mar", inicio: "18:00", fin: "19:40"}, {dia: "Jue", inicio
